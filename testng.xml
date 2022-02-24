@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite”" thread-count="2" parallel="tests">
+  <test  name="ChromeTest">
+  
+    <classes>
+    
+     <class name="com.dsalgo.testcases.Array_PageValidation"/>
+      <parameter name="browser" value="Chrome"/>
+    </classes>
+  </test> 
+  <test  name="SafariTest">
+  
+    <classes>
+    
+     <class name="com.dsalgo.testcases.Array_PageValidation"/>
+            <parameter name="browser" value="Safari"/>
+      
+    </classes>
+  </test> 
+  
+</suite> 
